@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Battle Arena Theme */
+    --background: 220 27% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 27% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 27% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 220 27% 18%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 220 27% 15%;
+    --muted-foreground: 220 9% 65%;
+
+    --accent: 280 100% 70%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 27% 18%;
+    --input: 220 27% 18%;
+    --ring: 0 72% 51%;
+
+    /* Game-specific colors */
+    --battle-red: 0 72% 51%;
+    --battle-dark: 220 27% 8%;
+    --health-green: 120 60% 50%;
+    --energy-blue: 240 80% 60%;
+    --warning-orange: 30 100% 50%;
+    
+    /* Gradients */
+    --gradient-battle: linear-gradient(135deg, hsl(0 72% 51%), hsl(0 60% 45%));
+    --gradient-dark: linear-gradient(180deg, hsl(220 27% 12%), hsl(220 27% 8%));
+    --gradient-energy: linear-gradient(90deg, hsl(240 80% 60%), hsl(280 100% 70%));
+    
+    /* Shadows */
+    --shadow-battle: 0 10px 30px -10px hsl(0 72% 51% / 0.4);
+    --shadow-glow: 0 0 20px hsl(0 72% 51% / 0.3);
+    
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Battle Arena Dark Theme (keep same colors) */
+    --background: 220 27% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 27% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 27% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 220 27% 18%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 220 27% 15%;
+    --muted-foreground: 220 9% 65%;
+
+    --accent: 280 100% 70%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 27% 18%;
+    --input: 220 27% 18%;
+    --ring: 0 72% 51%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
