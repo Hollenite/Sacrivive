@@ -4,7 +4,7 @@ But every choice comes with a cost. Push yourself too far, and you risk falling 
 
 Play at:
 
-https://sacrivive-d3lod6dls-ariyans-projects-2b2f7d81.vercel.app/
+https://sacrivive.vercel.app/
 
 Will you bleed to survive — or sacrifice everything to win?
 
